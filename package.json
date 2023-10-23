@@ -1,0 +1,19 @@
+{
+  "name": "monorepo-vite-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "start": "turbo run preview --filter=./apps/*",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "turbo": "^1.10.16",
+    "@types/node": "^20.4.5"
+  },
+  "packageManager": "pnpm@8.9.2"
+}
